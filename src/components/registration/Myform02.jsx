@@ -86,7 +86,7 @@ const Myform02 = () => {
     return (
         <>
             <div className="main_cont" style={{ height: "80vh" }}>
-                <div className="container">
+                <div className="container bg-info">
                     <div className="row justify-content-center align-itmes-center">
                         <div className="for_margin_top col-md-4  card  shadow px-3 py-2 mycardReg">
                             <h2 className='fw-700 text-center'>Have an Account ?</h2>
