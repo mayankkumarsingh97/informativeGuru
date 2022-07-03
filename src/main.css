@@ -1,0 +1,32 @@
+*{
+    margin: 0;padding: 0;
+}
+
+li{ list-style: none;}
+
+.Vmid{
+    height: 90vh !important;
+}
+.Vmid_body{
+    height: 80vh !important;
+}
+
+.navi_area{
+    display: flex;
+    background-color: lightblue;
+}
+.nav li a{
+  transition: .75s ease;
+}
+.nav li a:hover{
+    background-color: #eee;
+    color: #000;
+}
+
+
+
+@media screen and (max-width:320px) {
+    .body_ye{
+        font-size: .9rem!important;
+    }
+}

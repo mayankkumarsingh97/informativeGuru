@@ -1,0 +1,20 @@
+.main2{
+    display: grid;
+    max-width: 100%;
+    background-color: lightblue;
+    align-items: center;
+    
+    grid-template-columns: repeat(5,1fr);
+    /* grid-template-rows: repeat(2,1fr); */
+}
+ .ye{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+@media screen and (max-width:768px) {
+    .main2{
+        grid-template-columns:repeat(2,1fr)!important;
+
+    }
+}

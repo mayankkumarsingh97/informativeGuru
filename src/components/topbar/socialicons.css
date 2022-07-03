@@ -1,0 +1,83 @@
+.cover01{
+    display: flex;
+    justify-content: end;
+    max-width: 100%;
+    min-height: 10vh;
+    padding:0 1rem;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    background-color: rgb(165, 234, 60);
+}
+
+.cover01 .top_left{
+    display: flex;
+    width: 40%;
+    
+    justify-content: start;
+    margin: 0;
+    align-items: center;
+}
+.cover01  .action{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    padding:.5rem 0;
+
+    text-decoration: none;
+}
+
+.action .watsapp{
+    margin:0 .1rem;
+}
+
+.cover01 .search{
+    display: flex;
+    align-items: center;
+    
+    width: 43%;
+    padding: 2px 5px;
+    height: inherit;
+}
+
+.cover01 .search input:focus{
+ outline:none;
+ 
+}
+.cover01 .search input{
+    width: 100%;
+    border-radius: 10px;
+    /* padding:6px 0px; */
+    border: none;
+}
+
+@media screen and (max-width:768px) {
+    .action .watsapp{
+        font-size: 1rem;
+        
+      }
+}
+
+@media screen and (max-width:575px) {
+    .cover01,.news{
+        display: none!important;
+    }
+    
+}
+
+
+/* scrolling newss */
+
+
+.news{
+    height: 4vh;
+    max-height: 4vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    word-wrap: break-word;
+    background-color: rgb(130, 252, 74)!important;
+    
+    align-items: center;
+    
+}

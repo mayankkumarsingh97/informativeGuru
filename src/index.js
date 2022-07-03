@@ -1,17 +1,81 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Contact from './components/contactus/Contact';
+import Body  from "./components/body/Body";
+import Myform02 from "./components/registration/Myform02";
+import { BrowserRouter } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
+import PageNotF from './materialUI/components/pagenotfound/PageNotF';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <App/>
+
+  <BrowserRouter>
+  
+
+        <Routes>
+          <Route path='/' element={<App/>}> 
+           <Route path='/Contact' element={<Contact/>} />
+           <Route path='/registration' element={<Myform02/>} />
+           <Route index  element={<Body/>} />
+           <Route path='*' element={<PageNotF/>}/>
+          </Route>
+            
+        </Routes>
+      </BrowserRouter>
+       
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ReactDOM.render(<Student name='mayank' roll={1+3} />,document.getElementById('root'))
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+  
+    
+      
+//     <BrowserRouter>
+//         <Routes>
+
+//           <Route path='/' element={<Mybody/>} />
+//           <Route path='/about' element={<About/>} />
+//           <Route path='/Contact' element={<Contact/>} />
+//           <Route path='/Faq' element={<Faq/>} />
+
+//         </Routes>
+
+//       </BrowserRouter>
+    
+    
+
+  
+// );
+
+
+
